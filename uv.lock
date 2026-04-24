@@ -137,6 +137,7 @@ dependencies = [
     { name = "numpy" },
     { name = "pytorch-lightning" },
     { name = "torch" },
+    { name = "tqdm" },
 ]
 
 [package.metadata]
@@ -146,6 +147,7 @@ requires-dist = [
     { name = "numpy", specifier = "==1.26.4" },
     { name = "pytorch-lightning", specifier = "==2.5.6" },
     { name = "torch", specifier = "==2.5.1" },
+    { name = "tqdm", specifier = ">=4.67.3" },
 ]
 
 [[package]]
