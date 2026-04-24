@@ -12,3 +12,15 @@ python sampling.py \
     --model_path models/unconditional_checkpoints_3d_mri/default \
     --num_samples 200
 ```
+
+### Arguments
+Arguments
+- `--config_path` (`str`, default: `configs/default.yaml`): Config file used for model/data setup.
+- `--model_path` (`str`, optional): Checkpoint .ckpt file or directory.
+- `--num_samples` (`int`, optional): Number of samples to save. If omitted, saves all validation samples.
+- `--num_inference_steps` (`int`, optional): Number of solver time points used during sampling. If omitted, uses solver_args.time_points from the config.
+- `--output_path` (`str`, optional): Explicit output .pkl path.
+- `--overwrite` (`flag`): Overwrite an existing file at --output_path.
+- `--output_norm` (`str`, default: `per_sample_minmax`): One of clip_0_1, per_sample_minmax, global_minmax, none.
+- `--allow_config_mismatch` (`flag`): Allow loading a checkpoint whose saved critical model fields differ from current config.
+- `--seed` (`int`, optional): Override RNG seed for reproducible inference. Defaults to train_args.seed if provided.
