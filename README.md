@@ -1,4 +1,4 @@
-# comp8230-assignment2
+# Accelerating Medical Image Synthesis with Flow Matching
 This is the code for *Assignment 2 of COMP8230 Session 1 2026 by Jinrui Yang*, implementing medical image synthesis (particularly brain MRI) with **Flow Matching**.
 
 ## Loading Model Checkpoint
